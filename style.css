@@ -1,15 +1,12 @@
 body{
-	margin: 0;
+	margin: 0 ;
 	padding: 0;
 	box-sizing: border-box;
 	font-family: 'Montserrat', sans-serif;
-	
-  min-height: 100vh;
-
+	min-height: 100vh;
 }
 html{
 	scroll-behavior: smooth;
-
 }
 a{
 	text-decoration: none;
@@ -20,7 +17,7 @@ a{
 	font-size: 36px;
 	font-weight: 600;
 	 text-transform: uppercase;
-	 padding-bottom: 40px;
+	 padding-bottom: 30px;
 }
 .colored_text{
 	color: #F2AA4C;
@@ -48,11 +45,35 @@ a{
 #myBtn:hover {
  opacity: 1;
 }
+button{
+	padding: 10px 20px;
+	border-radius: 24px;
+	border: 0;
+	background-color: #F2AA4C;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+}
+.center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px;
+}
+
+/*-  bignav  -*/
+.bignav{
+	background:url(images/heroimage1.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
 
 
 /* -------------------------- navbar --------------------------- */
 nav {
-	padding: 0 30px;
+	padding: 30px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -62,21 +83,18 @@ nav {
 .logo{
 	font-family: 'Libre Baskerville', serif;
 	font-size: 45px;
-	padding-bottom: 10px;
 	cursor: pointer;
+	color: #fff;
 }
-
-
-
 .nav_menu{
-display: flex;
+	display: flex;
     justify-content: space-between;
     align-items: center;
     list-style: none;
 }
 
 .nav_item{
-	padding:  24px;
+	margin: 10px 16px;
 	cursor: pointer;
 	font-size: 18px;
 	opacity: 0.75;
@@ -85,11 +103,13 @@ display: flex;
 .nav_colored{
 	background-color: #F2AA4C;
 	color: black;
+	padding: 10px;
+	border-radius: 3px;
 }
 
-.nav_item:hover {
-	border-bottom: 2px solid #F2AA4C ;
-	opacity: 1;
+.nav_item a:hover {
+	color:  #F2AA4C ;
+	filter: brightness(0.95);
 }
 
 .hamburger {
@@ -108,98 +128,141 @@ display: flex;
 
 /* -------------------------- hero section --------------------------- */
 .hero_section{
-	padding: 20px 0;
+	padding:  0;
 }
-.hero_section img{	
+/*.hero_section img{	
 	width: 100%;
 	height: 90vh;
 	object-fit: cover;
-}
+	filter: brightness(0.7);
+}*/
 
 .hero_section p{
-		font-size: 54px;
-		
-		color: white;
+	font-size: 54px;
+	font-weight: 600;
+	color: white;
 	position: absolute;
-	top: 50%;
-	right: 39px;
+	top: 30%;
+	right: 10%;
 }
 
-video {
+/*video {
 	object-fit: cover;
 	width: 100vw;
 	height: 80vh;
 	opacity: 0.9;
   }
+  */
 
 /* -------------------------- about me --------------------------- */
 .about_section{
-	padding: 30px 0;
+	padding: 40px 0;
 }
-.row img{
+.about_img{
 	width: 50%;
+	padding: 30px;
+}
+.about_img img{
+	width: 100%;
+	height: 100%;
+	border-radius: 0 20px 0 20px;
 }
 .about_text{
-	padding: 0 30px 0 15px;
-	font-size: 24px;
+	width: 50%;
+	font-size: 18px;
+	padding: 20px 30px;
 	line-height: 45px;
 }
-
+.about_row{
+	margin: 10px 0;
+}
+.about_row a{
+	margin-left: 10px;
+	font-size: 22px;
+}
 /* -------------------------- services --------------------------- */
 .service_section{
-	padding: 30px ;
+	padding: 50px 0;
 
 }
-.service{
+.service_container{
 	display: flex;
-	padding: 0 30px;
+	justify-content: space-around;
 	align-items: center;
+	padding: 0 60px;
+}
+.service{
 	cursor: pointer;
+	border: 1px solid white;
+	padding: 25px 30px;
+	margin: 15px;
+	height: 30vh;
+	width: 30vw;
+	transition: background-color 0.5s;
+	background-color: #a8a8a813;
 }
 .service  img{
-	height: 80px;
-	width: 80px;
+	height: 50px;
+	width: 50px;
+}
+.line{
+	border-bottom: 2px solid rgb(141, 137, 137);
+	margin-top: 20px;
+	width: 20%;
+	transition: width 2s;
 }
 .service_heading{
-	font-size: 28px;
-	padding-left: 10px;
-	margin-bottom: 0;
+	font-size: 24px;
+	font-weight: 500;
 }
 .service_text{
-	margin-top: 5px;
-	font-size: 16px;
-	padding-left: 10px;
+	font-size: 14px;
 	opacity: 0.7;
 }
-.service_text:hover{
-	opacity: 1;
-}
 .service:hover{
-	border-bottom: 2px solid #F2AA4C ;
+	background-color: #f2aa4cde;
+}
+.service:hover .line{
+	width: 100%;
+	border-color: #101820;	
 }
 
 /* -------------------------- works --------------------------- */
 
+
+.work_section{
+	padding: 20px 60px;
+}
+.work_container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.work{
+	margin: 10px;
+	width: 20vw;
+	padding: 10px;
+	text-align: center;
+	background-color: #a8a8a813;
+	cursor: pointer;
+}
+.work img{
+	width: 100%;
+	filter: brightness(0.85);
+	transition: transform 1s;
+}
+.work:hover  img{
+	-ms-transform: scale(1.1); /* IE 9 */
+	-webkit-transform: scale(1.1); /* Safari 3-8 */
+	transform: scale(1.1);
+}
 .work_text{
 	text-align: center;
 	font-size: 18px;
-	margin-top: 30px;
-}
-.works_link{
-	display: flex;
-	justify-content: center;
-}
-.works_link img{
-	padding: 10px 50px;
-	width:  150px;
-	height: 150px;
-}
-
-.work_section{
-	padding: 20px 0;
+	margin-top: 40px;
 }
 .work_perference{
-	margin-top: 10px;
+	margin-top: 40px;
 	padding: 20px 0;
 	background-color:  rgba(242, 170, 76, 0.21) ;
 	display: flex;
@@ -211,6 +274,30 @@ video {
 	width:  100px;
 	height: 100px;
 }
+/*----------------blogs------*/
+.blog_section{
+	padding: 20px 60px;
+}
+.blog_container{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+.blog{
+	border-radius: 5px;
+	margin: 20px 15px;
+	width: 25vw;
+	background-color: #a8a8a813;
+}
+.blog img{
+	width: 100%;
+	height: 80%;
+}
+.blog p{
+	text-align: center;
+	font-size: 18px;
+}
+
 
 /* -------------------------- gallery --------------------------- */
 
@@ -264,7 +351,7 @@ video {
   text-align: center;
 }
 
-/* -------------------------- get in touch --------------------------- */
+/* -------------------------- get in touch --------------------------- 
 
 .contact{
 	background-image: url("images/contact.png");
@@ -314,20 +401,56 @@ video {
 	font-size: 18px;
 	cursor: pointer;
 }
+*/
 
 /* -------------------------- footer --------------------------- */
 
 footer{
+	margin-top: 50px;
 	padding: 30px;
 	background-color: black;
 	color: white;
 	margin-top: 50px;
+	position: relative;
 }
-
+.footer_first_row{
+	height: 55vh;
+	position: relative;
+}
+.footer_first_row img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.getintouch_card{
+	position: absolute;
+	top: -5%;
+	right: 5%;
+	border: 1px solid white;
+	padding: 40px 80px;
+	height: 50vh;
+	background-color: #fff;
+	color: #101820;
+}
+.getintouch_card div{
+	margin: 30px 0;
+}
+.getintouch_card label{
+	text-transform: capitalize;
+	margin-right: 10px;
+}
+.getintouch_card input{
+	border: none;
+	border-bottom: 1px solid black;
+	width: 100%;
+	height: 20px;
+	outline: none;
+}
 .footer_row{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
+	margin-top: 20px;
 }
 
 .footer_contain{
@@ -411,13 +534,6 @@ footer{
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-10.5px) rotate(-50deg);
     }
-
-
-
-.hero_section p{
-		color: white;
-	}
-  
 }
 
 
@@ -484,31 +600,68 @@ footer{
 		padding: 0 10px;
 	}
 	.hero_section p{
-		font-size: 24px;
+		font-size: 32px;
 	position: absolute;
-	top: 50%;
-	right: 5px;
+	top: 45%;
+	right: 5%;
 }
 .heading{
 	padding-bottom: 20px;
 }
-.works_link img{
-	padding: 10px 20px;
-	width:  80px;
-	height: 80px;
+#myBtn{
+	right: 15px;
+}
+.about_img, .about_text{
+	width: 90%;
+	padding: 10px;
+}
+.service_container,.work_container,.blog_container{
+	flex-direction: column;
+}
+.service{
+	width: 80vw;
+	height: 25vh;
+	padding: 15px 30px;
+}
+.work{
+	margin: 10px;
+	width: 80vw;
+	padding: 10px;
+	text-align: center;
+	background-color: #a8a8a813;
+	cursor: pointer;
+}
+.work_perference{
+	margin-top: 40px;
+	padding: 20px 0;
+	background-color:  rgba(242, 170, 76, 0.21) ;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 .work_perference img{
-	padding: 10px 5px;
-	width:  60px;
-	height: 60px;
+	padding: 10px ;
+	width:  50px;
+	height: 50px;
+}
+.blog{
+	border-radius: 5px;
+	margin: 20px 15px;
+	width: 70vw;
+	background-color: #a8a8a813;
+}
+.blog img{
+	width: 100%;
+	height: 80%;
+}
+.blog p{
+	text-align: center;
+	font-size: 18px;
 }
 .gallery_row{
 	flex-direction: column;
 }
-.big_input{
-	width: 78vw;
-}
-#myBtn{
-	right: 15px;
+.footer{
+	height: 150vh;
 }
 }

@@ -21,27 +21,30 @@
 </head>
 
 <body>
-	<header>
+	
 
-		<!-- navbar section -->
+		<!--big nav section-->
+		<div class="bignav">
 
+			<!-- navbar section -->
 		<nav>
 			<a class="logo">Manish Seven</a>
 
 			<ul class="nav_menu">
+
 				<li class="nav_item">
-					<a href="#">Home</a>
-				</li>
-				<li class="nav_item">
-					<a href="#about">About</a>
+					<a href="#about">About Me</a>
 				</li>
 				<li class="nav_item">
 					<a href="#service">Services</a>
 				</li>
 				<li class="nav_item">
-					<a href="#work">Works</a>
+					<a href="#work">Portfolio</a>
 				</li>
-				<li class="nav_item nav_colored">
+				<li class="nav_item">
+					<a href="#blogs">Blogs</a>
+				</li>
+				<li class="nav_item">
 					<a href="#contact">Contact</a>
 				</li>
 			</ul>
@@ -52,37 +55,55 @@
 				<span class="bar"></span>
 			</div>
 		</nav>
-	</header>
+	
 	<main>
-
-
 		<!-- Hero Section -->
 
 		<div class="hero_section">
-			<video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
+			<!-- <video playsinline autoplay muted loop poster="polina.jpg" id="bgvid">
 
 				<source src="laptop.mp4" type="video/mp4" alt="laptop">
-			</video>
-			<p>Hey, Welcome to my website. <br>
-				De<span class="txt-rotate" data-period="1000" data-rotate='[ "sign. ", "velopment. " ]'></span>
+			</video> -->
+			<p>Welcome to Seven's Tech <br>
+				De<span class="txt-rotate" data-period="1000" data-rotate='[ "sign. ", "velopment. ", "ployment. " ]'></span>
 			</p>
 
 		</div>
+		</div>
+
+		
 
 		<!-- About Section -->
 
 		<div id="about" class="about_section">
 			<p class="heading"><label class="colored_text">About</label> me</p>
 			<div class="row">
-				<img src="images/manish.jpg" />
-				<p class="about_text">My name is Manish Parajuli and I am from Dang, Nepal.
-					Currently, I am seeking my career as frontend designer and developer.
-					I use the latest tools and creative approaches that help solve a specific business or personal
-					issue.
-					I'll be happy to join creative teams to work on young-eyed commercial or social projects. If you
-					think we can create something great together, contact me in any convenient way to discuss the
-					possible cooperation.
-				</p>
+				<div class="about_img">
+					<img src="images/manish.jpg" />
+				</div>
+				<div class="about_text">
+					<p>My name is Manish Parajuli, from Dang Nepal.
+						Currently, I am working as an Software Engineer Intern.
+						I use the latest tools and creative approaches to solve a specific business or personal
+						issue.
+						I'll be happy to join creative teams to work on young-eyed commercial or social projects. If you
+						think we can create something great together, contact me in any convenient way to discuss the
+						possible cooperation.
+					</p>
+					<button>view resume <i class="fas fa-file"></i></button>
+					<div class="about_row">
+						<a href="https://www.instagram.com/manish.seven.web/"><i class="fab fa-instagram"></i></a>
+	
+					<a href="https://www.linkedin.com/in/manish3477/"><i i class="fab fa-linkedin-in"></i></a>
+	
+					<a href="https://github.com/manish3477"><i class="fab fa-github"></i></a>
+	
+					<a href="https://www.facebook.com/manish.seven.77/"><i class="fab fa-facebook-f"></i></a>
+	
+					<a href=""><i class="fab fa-twitter"></i></a>
+	
+					</div>
+				</div>
 			</div>
 
 		</div>
@@ -91,31 +112,29 @@
 		<!-- Service Section -->
 
 		<div id="service" class="service_section">
-			<p class="heading">Offerings</p>
-			<div class="row">
+			<p class="heading">Services</p>
+			<div class="service_container">
 
 				<div class="service">
 					<img src="images/design.png" />
-					<div>
 						<p class="service_heading">Web Designing</p>
+						<div class="line"></div>
 						<p class="service_text">Designing Web pages using lastest trends and concepts. </p>
-					</div>
 				</div>
 
 				<div class="service">
 					<img src="images/develop.png" />
-					<div>
 						<p class="service_heading">Web Developing</p>
+						<div class="line"></div>
 						<p class="service_text">Developing well mannaged sites and webpages.</p>
-					</div>
+					
 				</div>
 
 				<div class="service">
 					<img src="images/responsive.png" />
-					<div>
-						<p class="service_heading">Digital Contents</p>
-						<p class="service_text">Creating contents for advetisments and official purposes.</p>
-					</div>
+						<p class="service_heading">Web Hosting</p>
+						<div class="line"></div>
+						<p class="service_text">Deploying and Hosting your sites.</p>
 				</div>
 			</div>
 		</div>
@@ -125,13 +144,26 @@
 
 		<div id="work" class="work_section">
 			<p class="heading">Works</p>
-			<p class="work_text">Find some of my works here:</p>
-			<div class="works_link">
-				<a href="https://dribbble.com/manish3477"><img src="images/dribble.png" title="Design Shots" /> </a>
-				<a href="https://www.figma.com/files/recent?fuid=984043513630980921"><img src="images/Figma.png"
-						title="Design Prototypes" /></a>
-
-				<a href="https://github.com/manish3477"><img src="images/github.png" title="Projects " /></a>
+			<div class="work_container">
+				<div class="work">
+					<img src="gallery/newsportal.png" alt="" >
+					<p>NewsPortal Website Concept. </p>
+				</div>
+				<div class="work">
+					<img src="gallery/personalweb.png" alt="" >
+					<p>Personal Portfolio Website Concept</p>
+				</div>
+				<div class="work">
+					<img src="gallery/tourism.png" alt="" >
+					<p>Travel and Tourism Website Concept.</p>
+				</div>
+				<div class="work">
+					<img src="gallery/newsportal.png" alt="" >
+					<p>NewsPortal Website Concept. </p>
+				</div>
+			</div>
+			<div class="center">
+				<button>find more <i class="fab fa-github"></i></button>
 			</div>
 			<p class="work_text">My Work Perferences:</p>
 			<div class="work_perference">
@@ -144,27 +176,53 @@
 			</div>
 		</div>
 
+		<!--blog section
+		<div id="blogs" class="blog_section">
+			<p class="heading">Blogs</p>
+			<div class="blog_container">
+				<div class="blog">
+					<img src="gallery/loading.png" alt="" srcset="">
+					<p class="blog_title">Title</p>
+					<p><a href="">Read More.</a></p>
+				</div>
+				<div class="blog">
+					<img src="gallery/loading.png" alt="" srcset="">
+					<p class="blog_title">Title</p>
+					<p><a href="">Read More.</a></p>
+				</div>
+				<div class="blog">
+					<img src="gallery/loading.png" alt="" srcset="">
+					<p class="blog_title">Title</p>
+					<p><a href="">Read More.</a></p>
+				</div>
+			</div>
+			<div class="center">
+				<button>find more <i class="fas fa-angle-right"></i></button>
+			</div>
+
+		</div>
+		-->
 
 		<!-- Gallery Section -->
 
 		<div class="gallery_section">
-			<p class="heading"><label class="colored_text">Awesome</label> Gallery </p>
+			<p class="heading"><label class="colored_text">My</label> Gallery </p>
 			<div class="gallery">
 				<div class="gallery_row">
 					<div class="container">
-						<img src="gallary/blood.jpg" alt="images" />
+						<img src="gallery/blood.jpg" alt="images" />
 						<div class="overlay">
-							<div class="text">Blood Donation in College <br> 5 Feb 2019</div>
+							<div class="text">Blood Donation.<br> 5 Feb 2019</div>
 						</div>
 					</div>
 					<div class="container">
-						<img src="gallary/tiger.jpg" alt="images" />
+						<img src="gallery/tiger.jpg" alt="images" />
 						<div class="overlay">
-							<div class="text">Article in College magzine <br> 22 Dec 2019</div>
+							<div class="text">Article in College Magzine <br> 22 Dec 2019</div>
 						</div>
 					</div>
 					<div class="container">
-						<img src="gallary/visitnepal.jpg" alt="images" />
+						<img src="gallery/visitnepal.jpg" alt="images" />
 						<div class="overlay">
 							<div class="text">Article in College Magzine<br> 1 Mar 2019</div>
 						</div>
@@ -172,21 +230,21 @@
 				</div>
 				<div class="gallery_row">
 					<div class="container">
-						<img src="gallary/para.jpg" alt="images" />
+						<img src="gallery/para.jpg" alt="images" />
 						<div class="overlay">
 							<div class="text">Paragliding in Pokhara <br> 15 Jun 2016</div>
 						</div>
 					</div>
 					<div class="container">
-						<img src="gallary/speech.jpg" alt="images" />
+						<img src="gallery/speech.jpg" alt="images" />
 						<div class="overlay">
 							<div class="text">College Presenataion On</br> Digital Nepal <br> 7 Aug 2019</div>
 						</div>
 					</div>
 					<div class="container">
-						<img src="gallary/photo.jpg" alt="images" />
+						<img src="gallery/photo.jpg" alt="images" />
 						<div class="overlay">
-							<div class="text">Soyambhu's shot </br> 3 Mar 2020</div>
+							<div class="text">Soyambhu's Shot </br> 3 Mar 2020</div>
 						</div>
 					</div>
 				</div>
@@ -194,7 +252,7 @@
 		</div>
 
 
-		<!-- Get in touch -->
+		<!-- Get in touch 
 		<div id="contact" class="contact">
 			<p class="heading"><label class="colored_text">Get In touch</label> with me </p>
 			<div class="contact_row">
@@ -216,46 +274,51 @@
 			<div class="contact_row"><button>Submit</button></div>
 		</div>
 
-
+-->
 	</main>
-	<footer>
-		<div class="footer_row">
-			<div class="footer_contain">
-				<p class="footer_contain_heading">About Me</p>
-				<p>My name is Manish parajuli. I design and build web interface .
-					Always looking forward for knowledge and update myself with lastest trends and concepts.
-				</p>
+	<footer id="contact">
+			<div class="footer_first_row">
+				<img src="gallery/footerimg.jpg" alt="">
+				<div class="getintouch_card">
+					<div><label for="">name</label><span><input type="text"></span></div>
+					<div><label for="">email</label><span><input type="text"></span></div>
+					<div><label for="">phone</label><span><input type="text"></span></div>
+					<div><label for="">message</label><span><input type="text"></span></div>
+					<button>send message</button>
+				</div>
 			</div>
-			<div class="footer_contain">
-				<p class="footer_contain_heading">Contact Info</p>
-				<a href="mailto:manishparajuli43@gmail.com">
-					<p class="footer_text">
-						<i class="fas fa-envelope"></i> manishparajuli43@gmail.com
-					</p>
-				</a>
-
-				<a href="tel:9866838018">
-					<p class="footer_text"><i class="fas fa-phone-alt"></i> +977-9866838018</p>
-				</a>
-
-				<a href="">
-					<p class="footer_text"><i class="fas fa-map-marker-alt"></i> Dhapasi, Kathmandu Nepal</p>
-				</a>
+			<div class="footer_row">
+				<div class="footer_contain">
+					<p class="footer_contain_heading">Contact Info</p>
+					<a href="mailto:manishparajuli43@gmail.com">
+						<p class="footer_text">
+							<i class="fas fa-envelope"></i> manishparajuli43@gmail.com
+						</p>
+					</a>
+	
+					<a href="tel:9866838018">
+						<p class="footer_text"><i class="fas fa-phone-alt"></i> +977-9866838018</p>
+					</a>
+	
+					<a href="">
+						<p class="footer_text"><i class="fas fa-map-marker-alt"></i> Dhapasi, Kathmandu Nepal</p>
+					</a>
+				</div>
+				<div class="footer_contain">
+					<p class="footer_contain_heading">Social Media</p>
+					<a href="https://www.instagram.com/manish.seven.web/"><i class="fab fa-instagram"></i></a>
+	
+					<a href="https://www.linkedin.com/in/manish3477/"><i i class="fab fa-linkedin-in"></i></a>
+	
+					<a href="https://github.com/manish3477"><i class="fab fa-github"></i></a>
+	
+					<a href="https://www.facebook.com/manish.seven.77/"><i class="fab fa-facebook-f"></i></a>
+	
+					<a href=""><i class="fab fa-twitter"></i></a>
+	
+				</div>
 			</div>
-			<div class="footer_contain">
-				<p class="footer_contain_heading">Social Media</p>
-				<a href="https://www.instagram.com/manish.seven.web/"><i class="fab fa-instagram"></i></a>
-
-				<a href="https://www.linkedin.com/in/manish3477/"><i i class="fab fa-linkedin-in"></i></a>
-
-				<a href="https://github.com/manish3477"><i class="fab fa-github"></i></a>
-
-				<a href="https://www.facebook.com/manish.seven.77/"><i class="fab fa-facebook-f"></i></a>
-
-				<a href=""><i class="fab fa-twitter"></i></a>
-
-			</div>
-		</div>
+		
 		<br>
 		<hr>
 	</footer>
